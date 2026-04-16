@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(79, 164, 210);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(6, 7, 7);
+
+        }
+        .card{
+            background: rgb(46, 193, 56) ;
+            padding: 20px;
+            border-radius: 12px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgb(0, 0,0);
+        
+        }
+        .imgperfil{
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 5px solid rgb(32, 13, 242);
+            margin-bottom: 12px;
+            object-fit: fill;
+        }
+        h2{
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+        .local{
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .job{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .botoes{
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px
+        }
+        .btn{
+            padding: 10px 18px;
+            border-radius: 6px;
+            border: 1px solid rgb(213, 217, 218);
+            cursor: pointer;
+            font-size: 15px;
+            transition:  0.3;
+        }
+        .btn:hover{
+            opacity: 0.8;
+            background: #4156e1;
+        }
+        .skills{
+            margin-top: 12px;
+            text-align: left;
+        }
+        .skills h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .tags{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag{
+            border: 1px solid rgb(209, 220, 223);
+            padding: 5px 10px;
+            border-radius: 4px;
+
+        }
+        .social-midia{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 20px;
+        }
+        .social-midia i{
+            cursor: pointer;
+            transform: 0.3s;
+        }
+        .social-midia i:hover{
+            color: #a52a2c;
+            transform: scale(1,2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="biel.png" alt="Foto de Perfil" class="imgperfil">
+        <h2>Gabriel Vitor Dias Rocha</h2>
+        <div class="local"> Montes Claros - MG </div>
+        <div class="job">Estudante de T.I<br>Técnico em Informática</div>
+
+
+        <div class="botoes">
+            <button class="btn primario">Mensagem</button>
+            <button class="btn secundario">Follow</button>
+        </div>
+        <div class="skills">
+            <h3>Habilidades</h3>
+            <div class="tags">
+                <span class="tag">Especialista em vendas(telemarketing)</span>
+                <span class="tag">Conhecimento em energia quantica</span>
+                <span class="tag">Javascript</span>
+                <span class="tag">Habilidades em python</span>
+                <span class="tag">Analista de dados</span>
+                <span class="tag">Banco de dados</span>
+                <span class="tag">Conhecimento em linux</span>
+                <span class="tag">Conhecimento em windows</span>
+            </div>
+        </div>
+        <div class="social-media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+</body>
+</html>
