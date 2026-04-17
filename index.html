@@ -8,18 +8,25 @@
 
     <style>
         body{
+            background: linear-gradient(-45deg,rgb(211, 125, 21),rgb(123, 255, 0),rgb(0, 247, 255),rgb(235,0,0));
+            background-size: 400% 400%;
+            animation: gradientBG 5s ease infinite;
             margin: 0;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: rgb(79, 164, 210);
             font-family: Arial, Helvetica, sans-serif;
-            color: rgb(6, 7, 7);
+            color: rgb(2, 16, 16);
 
         }
+        @keyframes gradientBG{
+        0% {background-position:0% 50% ;}
+        50%{background-position: 100% 50%;}
+        100%{background-position: 0% 50%;}
+        }
         .card{
-            background: rgb(46, 193, 56) ;
+            background: rgb(51, 122, 57) ;
             padding: 20px;
             border-radius: 12px;
             width: 320px;
@@ -31,7 +38,7 @@
             width: 280px;
             height: 280px;
             border-radius: 50%;
-            border: 5px solid rgb(32, 13, 242);
+            border: 5px solid rgb(13, 13, 242);
             margin-bottom: 12px;
             object-fit: fill;
         }
@@ -41,7 +48,7 @@
         }
         .local{
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 10px;
         }
         .job{
@@ -57,14 +64,14 @@
         .btn{
             padding: 10px 18px;
             border-radius: 6px;
-            border: 1px solid rgb(213, 217, 218);
+            border: 1px solid rgb(23, 30, 32);
             cursor: pointer;
             font-size: 15px;
             transition:  0.3;
         }
         .btn:hover{
             opacity: 0.8;
-            background: #4156e1;
+            background: #2146ea;
         }
         .skills{
             margin-top: 12px;
@@ -80,26 +87,38 @@
             gap: 8px;
         }
         .tag{
-            border: 1px solid rgb(209, 220, 223);
+            border: 1px solid rgb(228, 236, 239);
             padding: 5px 10px;
             border-radius: 4px;
 
         }
-        .social-midia{
+        .social-media{
             margin-top: 20px;
             display: flex;
             justify-content: center;
             gap: 15px;
             font-size: 20px;
         }
-        .social-midia i{
+        .social-media i{
             cursor: pointer;
-            transform: 0.3s;
+            transition: 0.3s;
+            
         }
-        .social-midia i:hover{
-            color: #a52a2c;
-            transform: scale(1,2);
+        .social-media{
+            color: aliceblue;
+            font-size: 20PX;
+            transition: 0.3s;
         }
+        .social-media a{
+            text-decoration: none;
+            color: rgb(5, 33, 57);
+        }
+        .social-media a:hover{
+            color: rgb(40, 21, 211);
+            transform: scale(1.2);
+        }
+        
+
     </style>
 </head>
 <body>
@@ -111,8 +130,8 @@
 
 
         <div class="botoes">
-            <button class="btn primario">Mensagem</button>
-            <button class="btn secundario">Follow</button>
+            <a href="https://wa.we/5538999105524?text=Olá,%20vim%20pelo%20card." class="btn primario">Mensagem</a>
+            <a href="https://www.instagram.com/gabrielvitor_22?igsh=MTFpMDVmdjRuejh0aA==" class="btn secundario">Follow</a>
         </div>
         <div class="skills">
             <h3>Habilidades</h3>
@@ -128,10 +147,10 @@
             </div>
         </div>
         <div class="social-media">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/gvitordiasmarketing-code" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-vitor-9aa3713b3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/gabrielvitor_22?igsh=MTFpMDVmdjRuejh0aA==" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
 </body>
